@@ -253,6 +253,10 @@ footer.galery {
  
 }
 /* STYLES DE GALERY*/
+article.galery {
+     margin-top: 250px;
+    display: flex;
+}
 @keyframes slidy {
 0% { left: 0%; }
 20% { left: 0%; }
@@ -320,7 +324,6 @@ main.about p {
         justify-content: space-evenly;
         z-index: 3;
     }
-    
     
     main.index {
         display: flex;
