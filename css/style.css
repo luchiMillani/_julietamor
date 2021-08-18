@@ -105,7 +105,7 @@ ul li a {
 }
 ul li a:hover {
     transition-duration: 0.2s;
-    font-size: 2vw;
+    font-size: 18px;
 }
 li {
     font-family: 'Staatliches', sans-serif;
@@ -137,7 +137,7 @@ h1{
 }
 article.index {
 
-    padding-bottom: 15vw;
+    padding-bottom: 40px;
     border-bottom: grey 3px dotted;
     display: flex;
     flex-direction: column;
@@ -147,7 +147,8 @@ article.index h2 {
     text-align: center;
     background: #4eb3d2de;
     border-radius: 45px;
-    margin-bottom: 10vw;
+    margin-bottom: 20px;
+    margin-top: 28px;
     font-size: 22px;
     padding: 20px;
 
@@ -239,7 +240,7 @@ footer{
     font-weight: 800;
     text-align: center;
     margin-top: -10vw;
-    padding: 5vw;
+    padding: 20px;
     position: relative; 
     bottom:0;
 }
@@ -255,14 +256,23 @@ footer.about{
 }
 footer.galery {
     position: relative; 
-    bottom:0px;
-    margin-top: 0px;
- 
+    margin-top: 50px;
 }
 /* STYLES DE GALERY*/
+section#slider article img {
+    height: 270px;
+    float: left;
+    margin-top: 10px;
+}
 article.galery {
     margin-top: 250px;
     display: flex;
+}
+article.galery img{
+    margin: 22px;
+    width: 40%;
+    padding-bottom: 0vw;
+    border-radius: 45px;
 }
 @keyframes slidy {
     0% { left: 0%; }
@@ -283,10 +293,13 @@ section#slider {
     overflow: hidden; 
 }
 section#slider article img { 
-    width: 15%; 
+    height: 270px; 
     float: left; 
-    margin-top: 150px;
-    size: 700px auto;
+    margin-top: 177px;
+}
+section#slider article {
+    position: relative;
+    width: 666%;
 }
 section#slider article { 
     position: relative;
@@ -332,7 +345,7 @@ main.about p {
     ul li a {
         display: flex;
         background: #3c3f6c;
-        padding: 1vw;
+        padding: 8px;
         border-radius: 15px;
 
     }
@@ -405,5 +418,10 @@ main.about p {
   
     footer a{
         font-size: 25px;
+    }
+
+    footer.galery {
+        position: relative;
+        margin-top: 10px;
     }
 }
