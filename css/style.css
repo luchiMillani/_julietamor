@@ -136,7 +136,7 @@ h1{
     text-align: center;
 }
 article.index {
-    margin: 10vw;
+
     padding-bottom: 15vw;
     border-bottom: grey 3px dotted;
     display: flex;
@@ -160,6 +160,11 @@ article#video h2 {
     font-size: 22px;
     padding: 20px;
 
+}
+section.taller{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 p {
     text-align: center;
@@ -235,6 +240,8 @@ footer{
     text-align: center;
     margin-top: -10vw;
     padding: 5vw;
+    position: relative; 
+    bottom:0;
 }
 footer a{
     height: 15vw;
@@ -248,33 +255,42 @@ footer.about{
 }
 footer.galery {
     position: relative; 
-    bottom:0;
-    
+    bottom:0px;
+    margin-top: 0px;
  
 }
 /* STYLES DE GALERY*/
 article.galery {
-     margin-top: 250px;
+    margin-top: 250px;
     display: flex;
 }
 @keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
 }
     
-body { margin: 0; } 
-section#slider { overflow: hidden; }
-section#slider article img { width: 20%; float: left; }
+body { 
+    margin: 0; 
+} 
+section#slider { 
+    overflow: hidden; 
+}
+section#slider article img { 
+    width: 15%; 
+    float: left; 
+    margin-top: 150px;
+    size: 700px auto;
+}
 section#slider article { 
     position: relative;
-    width: 500%;
+    width: 450%;
     margin: 0;
     left: 0;
     text-align: left;
@@ -324,7 +340,13 @@ main.about p {
         justify-content: space-evenly;
         z-index: 3;
     }
-    
+    section.taller{
+        display: flex;
+        padding: 30px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
     main.index {
         display: flex;
         flex-direction: column;
@@ -344,7 +366,6 @@ main.about p {
     }
     article.index {
         width: 40%;
-        margin: 5vw;
         padding-bottom: 0vw;
         border: grey 3px dotted;
         border-radius: 45px;
@@ -363,10 +384,15 @@ main.about p {
         margin: 0px 6px 0px;
     }
     article#video {
-        width: 90vw;
+        width: 95vw;
         margin-bottom: 10vw;
         border: grey 3px dotted;
         border-radius: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
     }
     article#video h2{
         text-align: center;
