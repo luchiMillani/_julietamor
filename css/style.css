@@ -172,8 +172,8 @@ p {
     padding-top: 1vw;
 }
 iframe {
-    width: 80%;
-    margin: 10vw;
+    padding: 25px;
+    width: 100%;
 }
 
 /*body formulario*/
@@ -255,11 +255,19 @@ footer a{
 footer.about{
     margin-top: -38px;
 }
+footer.index {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: unset;
+ 
+}
 footer.galery {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    margin-top: 20px;
+    position: absolute;
+    
+ 
 }
 /* STYLES DE GALERY*/
 section#slider article img {
@@ -359,7 +367,7 @@ main.about p {
     section.taller{
         display: flex;
         padding: 30px;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-direction: row;
     }
 
@@ -401,7 +409,6 @@ main.about p {
     }
     article#video {
         width: 95vw;
-        margin-bottom: 10vw;
         border: grey 3px dotted;
         border-radius: 45px;
         display: flex;
