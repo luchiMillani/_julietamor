@@ -416,7 +416,7 @@ main.about p {
         margin: 0px 6px 0px;
     }
     article#video {
-        width: 95vw;
+        width: 83vw;
         border: grey 3px dotted;
         border-radius: 45px;
         display: flex;
@@ -433,7 +433,9 @@ main.about p {
         font-size: 22px;
         padding: 20px;
     }
-
+    footer.about {
+        position: inherit;
+    }
     footer a{
         font-size: 25px;
     }
@@ -442,9 +444,7 @@ main.about p {
         position: relative;
         margin-top: 10px;
     }
-    footer.about {
-        position: inherit;
-    }
+
     section#slider {
         overflow: hidden;
         max-width: 488px;
