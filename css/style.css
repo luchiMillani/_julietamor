@@ -241,7 +241,8 @@ footer{
     text-align: center;
     width: 100%;
     padding: 10px;
-    bottom: 0;
+    position: sticky;
+    bottom: 0px;
 }
 footer section.icon{
     padding: 15px;
@@ -266,14 +267,17 @@ footer.galery {
     display: flex;
     flex-direction: column;
     position: absolute;
+    bottom: 0px;
     
  
 }
 /* STYLES DE GALERY*/
+main.galery {
+    min-height: calc( 100vh - 92px);
+}
 section#slider article img {
-    height: 270px;
-    float: left;
-    margin-top: 10px;
+    position: relative;
+    width: 100%;
 }
 article.galery {
     margin-top: 250px;
@@ -300,21 +304,26 @@ article.galery img{
 body { 
     margin: 0; 
 } 
-section#slider { 
-    overflow: hidden; 
+
+section#slider {
+    overflow: hidden;
+    max-width: 488px;
+    margin: auto;
+    margin-top: 215px;
 }
 section#slider article img { 
-    height: 300px; 
-    float: left; 
-    margin-top: 177px;
-}
-section#slider article {
     position: relative;
-    width: 666%;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
 }
+
 section#slider article { 
     position: relative;
-    width: 450%;
+ 
     margin: 0;
     left: 0;
     text-align: left;
@@ -433,5 +442,11 @@ main.about p {
     footer.galery {
         position: relative;
         margin-top: 10px;
+    }
+    section#slider {
+        overflow: hidden;
+        max-width: 488px;
+        margin: auto;
+        margin-top: 165px;
     }
 }
