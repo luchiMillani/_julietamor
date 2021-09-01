@@ -168,7 +168,7 @@ section.taller{
     flex-direction: column;
 }
 p {
-    text-align: center;
+    text-align: justify;
     padding-top: 1vw;
 }
 iframe {
@@ -273,7 +273,7 @@ footer.galery {
 }
 /* STYLES DE GALERY*/
 main.galery {
-    min-height: calc( 100vh - 92px);
+    min-height: calc( 100vh - 292px);
 }
 section#slider article img {
     position: relative;
