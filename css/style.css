@@ -444,8 +444,12 @@ footer.about{
 
     footer a{
         font-size: 25px;
-    }
 
+    }
+    footer a:hover{
+        color: #f3b7d4;
+        
+    }
     footer.galery {
         position: fixed;
         bottom: 0;
