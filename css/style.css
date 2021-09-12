@@ -447,7 +447,8 @@ footer.about{
     }
 
     footer.galery {
-        position: relative;
+        position: fixed;
+        bottom: 0;
         margin-top: 10px;
     }
 
